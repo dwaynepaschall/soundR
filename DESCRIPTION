@@ -1,0 +1,15 @@
+Package: soundR
+Title: Acoustic Data Analysis with R
+Version: 0.1
+Authors@R: person("Dwayne", "Paschall", email = "dwaynepaschall@gmail.com",
+                  role = c("aut", "cre"))
+Description: The description of a package is usually long,
+    spanning multiple lines. The second and subsequent lines
+    should be indented, usually with four spaces.
+Depends: R (>= 3.1.0)
+Imports:
+    audio,
+    seewave
+License: What license is it under?
+LazyData: true
+URL: https://github.com/dwaynepaschall/soundR/

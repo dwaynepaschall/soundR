@@ -1,0 +1,35 @@
+---
+title: "soundR - Acoustic Data Analysis with R"
+author: "D. Paschall"
+date: "April 26, 2016"
+output:
+      html_document:
+        toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Audio output - we will utilize the audio:play() function from the audio package. It sends sound information to the audio I/O device directly without invoking Windows MM Player, etc. 
+
+```{r echo=TRUE, eval=TRUE}
+library(audio)
+library(seewave)
+sample_rate <- 22050
+F1 <- synth(f=sample_rate, am=c(50,10), cf=2000, d=1, fm=c(500,5,0), plot=FALSE)
+# play(F1)
+# play(F1, rate=8000)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r eval=TRUE, echo=TRUE, fig.align='center'}
+plot(F1)
+```
+
+
